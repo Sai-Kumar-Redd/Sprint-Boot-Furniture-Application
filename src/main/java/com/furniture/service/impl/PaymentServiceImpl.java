@@ -36,6 +36,7 @@ public class PaymentServiceImpl implements PaymentService {
 
 
 		  orders.setStatus(true);
+
 		  orderRepository.save(orders);
 
           return this.paymentRepo.save(p1);
