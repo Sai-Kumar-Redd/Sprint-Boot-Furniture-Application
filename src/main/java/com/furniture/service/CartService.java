@@ -25,12 +25,15 @@ public class CartService {
     UserRepository userRepository;
 
     public void addCart(Cart cart){
+
         cartRepository.save(cart);
     }
     public List<Cart> getAllCart(){
+
         return cartRepository.findAll();
     }
     public  void deleteCart(int id){
+
         cartRepository.deleteById(id);
     }
 
